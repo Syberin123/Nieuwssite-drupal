@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.custom_article.comment
     - field.field.node.custom_article.field_categories
     - field.field.node.custom_article.field_image
-    - image.style.wide
+    - image.style.large
     - node.type.custom_article
   module:
     - comment
@@ -49,7 +49,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: large
       image_loading:
         attribute: eager
     third_party_settings: {  }

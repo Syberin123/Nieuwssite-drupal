@@ -17,7 +17,7 @@ plugin: 'views_block:latest_articles-block_5'
 settings:
   id: 'views_block:latest_articles-block_5'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   views_label: ''
   items_per_page: null

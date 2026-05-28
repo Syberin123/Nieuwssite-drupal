@@ -1,0 +1,29 @@
+uuid: ac97c308-6fd7-4d16-bb48-1fa72bbcb802
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_articles
+  module:
+    - system
+    - views
+  theme:
+    - my_theme
+id: my_theme_views_block__latest_articles_block_3
+theme: my_theme
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:latest_articles-block_3'
+settings:
+  id: 'views_block:latest_articles-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

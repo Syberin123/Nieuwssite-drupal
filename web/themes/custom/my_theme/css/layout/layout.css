@@ -1,0 +1,18 @@
+.social-bar {
+  display: none;
+}
+
+.wide-content .img {
+  display: flex;
+  justify-content: center;
+}
+
+.view-display-id-block_2 .view-content,
+.view-display-id-block_2 .view-header {
+  text-align: center;
+}
+
+.view-display-id-block_2 .field-content {
+  display: flex;
+  justify-content: center;
+}

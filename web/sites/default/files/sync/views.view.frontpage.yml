@@ -301,8 +301,11 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      title: Homepagina
+      defaults:
+        title: false
       display_extenders: {  }
-      path: node
+      path: home
     cache_metadata:
       max-age: -1
       contexts:

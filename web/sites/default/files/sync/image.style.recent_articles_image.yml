@@ -1,0 +1,20 @@
+uuid: 70891a69-becb-441d-9a88-854716054353
+langcode: en
+status: true
+dependencies: {  }
+name: recent_articles_image
+label: 'Recent articles image (150x100)'
+effects:
+  e875be3b-05b4-4b8f-9364-205e393b6d55:
+    uuid: e875be3b-05b4-4b8f-9364-205e393b6d55
+    id: image_resize
+    weight: 1
+    data:
+      width: 150
+      height: 100
+  d4a4d1ba-429b-4f3a-933c-9fce41308808:
+    uuid: d4a4d1ba-429b-4f3a-933c-9fce41308808
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

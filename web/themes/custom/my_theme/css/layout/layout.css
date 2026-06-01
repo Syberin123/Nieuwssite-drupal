@@ -1,8 +1,31 @@
+/* Homepage layout adjustments */
+
+.main-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.page-wrapper {
+  background: #ffffff;
+  max-width: 100% !important;
+}
+
+.block-system-branding-block {
+  width: 50px;
+  align-self: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.site-header__initial {
+  display: none !important;
+}
+
 .social-bar {
   display: none;
 }
 
-.wide-content .img {
+.wide-content {
   display: flex;
   justify-content: center;
 }
@@ -15,4 +38,12 @@
 .view-display-id-block_2 .field-content {
   display: flex;
   justify-content: center;
+}
+
+.view-display-id-block_2 .view-content img {
+  border-radius: 10px;
+}
+
+.grid-full .region--content img {
+  border-radius: 10px;
 }

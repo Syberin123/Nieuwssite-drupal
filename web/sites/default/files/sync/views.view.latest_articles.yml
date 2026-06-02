@@ -269,7 +269,18 @@ display:
           empty: false
           content: '<h2><a href="field:categories">[view:title]</a></h2>'
           tokenize: false
-      footer: {  }
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<hr>'
+          tokenize: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -301,11 +312,11 @@ display:
         - 'config:field.storage.node.field_image'
   block_2:
     id: block_2
-    display_title: 'Recent articles'
+    display_title: 'Recente artikelen'
     display_plugin: block
     position: 2
     display_options:
-      title: 'Recent articles'
+      title: 'Recente artikelen'
       fields:
         field_image:
           id: field_image
@@ -536,7 +547,7 @@ display:
         filters: false
         filter_groups: false
         header: false
-      display_description: 'shows the articles recently published'
+      display_description: 'Laat de recente artikelen zien'
       header:
         area_text_custom:
           id: area_text_custom
@@ -561,11 +572,11 @@ display:
         - 'config:field.storage.node.field_image'
   block_3:
     id: block_3
-    display_title: 'Sport articles'
+    display_title: 'Sport artikelen'
     display_plugin: block
     position: 6
     display_options:
-      title: 'Sport articles'
+      title: 'Sport artikelen'
       fields:
         field_image:
           id: field_image
@@ -905,7 +916,8 @@ display:
         filters: false
         filter_groups: false
         header: false
-      display_description: 'shows sport articles'
+        footer: false
+      display_description: 'Laat de sport artikelen zien'
       header:
         area_text_custom:
           id: area_text_custom
@@ -917,6 +929,29 @@ display:
           plugin_id: text_custom
           empty: false
           content: '<h2><a href="term:sport">[view:title]</a></h2>'
+          tokenize: false
+      footer:
+        area_text_custom_1:
+          id: area_text_custom_1
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Meer weergeven (Sport)'
+          plugin_id: text_custom
+          empty: false
+          content: '<h4><a href="term:sport">Meer sport -> </a></h4>'
+          tokenize: false
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<hr>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -931,11 +966,11 @@ display:
         - 'config:field.storage.node.field_image'
   block_4:
     id: block_4
-    display_title: 'Economy articles'
+    display_title: 'Economie artikelen'
     display_plugin: block
     position: 3
     display_options:
-      title: 'Economy articles'
+      title: 'Economie artikelen'
       fields:
         field_image:
           id: field_image
@@ -1213,7 +1248,7 @@ display:
         filter_groups: false
         header: false
         footer: false
-      display_description: 'shows economy articles'
+      display_description: 'Laat de economie artikelen zien'
       header:
         area_text_custom:
           id: area_text_custom
@@ -1226,7 +1261,29 @@ display:
           empty: false
           content: '<h2><a href="term:economie">[view:title]</a></h2>'
           tokenize: false
-      footer: {  }
+      footer:
+        area_text_custom_1:
+          id: area_text_custom_1
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Meer weergeven (Economie)'
+          plugin_id: text_custom
+          empty: false
+          content: '<h4><a href="term:economie">Meer economie -> </a></h4>'
+          tokenize: false
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<hr>'
+          tokenize: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1239,11 +1296,11 @@ display:
         - 'config:field.storage.node.field_image'
   block_5:
     id: block_5
-    display_title: 'Entertainment articles'
+    display_title: 'Entertainment artikelen'
     display_plugin: block
     position: 4
     display_options:
-      title: 'Entertainment articles'
+      title: 'Entertainment artikelen'
       fields:
         field_image:
           id: field_image
@@ -1520,7 +1577,7 @@ display:
         filters: false
         filter_groups: false
         header: false
-      display_description: 'shows entertainment articles'
+      display_description: 'laat de entertainment artikelen zien'
       header:
         area_text_custom:
           id: area_text_custom
@@ -1545,11 +1602,11 @@ display:
         - 'config:field.storage.node.field_image'
   block_6:
     id: block_6
-    display_title: 'Political articles'
+    display_title: 'Politiek artikelen'
     display_plugin: block
     position: 5
     display_options:
-      title: 'Political articles'
+      title: 'Politiek artikelen'
       fields:
         field_image:
           id: field_image
@@ -1826,7 +1883,8 @@ display:
         filters: false
         filter_groups: false
         header: false
-      display_description: 'shows political articles'
+        footer: false
+      display_description: 'Laat de politiek artikelen zien'
       header:
         area_text_custom:
           id: area_text_custom
@@ -1838,6 +1896,29 @@ display:
           plugin_id: text_custom
           empty: false
           content: '<h2><a href="term:politiek">[view:title]</a></h2>'
+          tokenize: false
+      footer:
+        area_text_custom_1:
+          id: area_text_custom_1
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Meer weergeven (Politiek)'
+          plugin_id: text_custom
+          empty: false
+          content: '<h4><a href="term:politiek">Meer politiek -> </a></h4>'
+          tokenize: false
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<hr>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -1851,11 +1932,11 @@ display:
         - 'config:field.storage.node.field_image'
   block_7:
     id: block_7
-    display_title: 'Tech articles'
+    display_title: 'Tech artikelen'
     display_plugin: block
     position: 7
     display_options:
-      title: 'Tech articles'
+      title: 'Tech artikelen'
       fields:
         field_image:
           id: field_image
@@ -2132,7 +2213,8 @@ display:
         filters: false
         filter_groups: false
         header: false
-      display_description: 'shows tech articles'
+        footer: false
+      display_description: 'Laat de tech artikelen zien'
       header:
         area_text_custom:
           id: area_text_custom
@@ -2144,6 +2226,29 @@ display:
           plugin_id: text_custom
           empty: false
           content: '<h2><a href="term:tech">[view:title]</a></h2>'
+          tokenize: false
+      footer:
+        area_text_custom_1:
+          id: area_text_custom_1
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Meer weergeven (Tech)'
+          plugin_id: text_custom
+          empty: false
+          content: '<h4><a href="term:tech">Meer tech -> </a></h4>'
+          tokenize: false
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<hr>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -2157,11 +2262,11 @@ display:
         - 'config:field.storage.node.field_image'
   block_8:
     id: block_8
-    display_title: 'Other articles'
+    display_title: 'Overige artikelen'
     display_plugin: block
     position: 8
     display_options:
-      title: 'Other articles'
+      title: 'Overige artikelen'
       fields:
         field_image:
           id: field_image
@@ -2438,7 +2543,8 @@ display:
         filters: false
         filter_groups: false
         header: false
-      display_description: 'shows other articles'
+        footer: false
+      display_description: 'Laat de overige artikelen zien'
       header:
         area_text_custom:
           id: area_text_custom
@@ -2450,6 +2556,29 @@ display:
           plugin_id: text_custom
           empty: false
           content: '<h2><a href="term:overig">[view:title]</a></h2>'
+          tokenize: false
+      footer:
+        area_text_custom_1:
+          id: area_text_custom_1
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Meer weergeven (Overig)'
+          plugin_id: text_custom
+          empty: false
+          content: '<h4><a href="term:overig">Meer overig-> </a></h4>'
+          tokenize: false
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<hr>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:

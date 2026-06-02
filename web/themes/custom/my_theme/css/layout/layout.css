@@ -47,3 +47,55 @@
 .grid-full .region--content img {
   border-radius: 10px;
 }
+.grid-full .region--content {
+  text-align: center;
+}
+
+.grid-full .region--content .views-row {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+}
+
+.grid-full .region--content .views-row img {
+  display: block;
+}
+
+.grid-full .region--content .views-row {
+  position: relative;
+  width: fit-content;
+}
+
+.grid-full .region--content .views-field-title,
+.grid-full .region--content .views-field-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  z-index: 2;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.grid-full .region--content .views-field-title a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.grid-full .region--content .views-footer {
+  display: inline-block;
+  width: fit-content;
+  margin: 10px auto 0;
+}
+
+.grid-full .region--content .views-footer hr {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}

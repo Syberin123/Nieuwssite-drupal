@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_categories
     - field.storage.node.field_image
     - image.style.homepage_image
-    - image.style.recent_articles_image
     - node.type.custom_article
     - taxonomy.vocabulary.categories
   content:
@@ -269,18 +268,7 @@ display:
           empty: false
           content: '<h2><a href="field:categories">[view:title]</a></h2>'
           tokenize: false
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: false
-          content: '<hr>'
-          tokenize: false
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -297,7 +285,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      title: Articles
+      title: Artikelen
       defaults:
         title: false
       display_extenders: {  }
@@ -318,72 +306,6 @@ display:
     display_options:
       title: 'Recente artikelen'
       fields:
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_link: content
-            image_style: recent_articles_image
-            image_loading:
-              attribute: lazy
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         title:
           id: title
           table: node_field_data
@@ -447,11 +369,60 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<hr>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 30
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: some
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 15
       sorts:
         created:
           id: created
@@ -558,7 +529,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2><a href="field:categories">[view:title]</a></h2>'
+          content: '<h3><a href="field:categories">[view:title]</a></h3>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -568,8 +539,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image'
+      tags: {  }
   block_3:
     id: block_3
     display_title: 'Sport artikelen'
@@ -928,7 +898,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2><a href="term:sport">[view:title]</a></h2>'
+          content: '<h3><a href="term:sport">[view:title]</a></h3>'
           tokenize: false
       footer:
         area_text_custom_1:
@@ -1259,7 +1229,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2><a href="term:economie">[view:title]</a></h2>'
+          content: '<h3><a href="term:economie">[view:title]</a></h3>'
           tokenize: false
       footer:
         area_text_custom_1:
@@ -1577,6 +1547,7 @@ display:
         filters: false
         filter_groups: false
         header: false
+        footer: false
       display_description: 'laat de entertainment artikelen zien'
       header:
         area_text_custom:
@@ -1588,7 +1559,30 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2><a href="term:entertainment">[view:title]</a></h2>'
+          content: '<h3><a href="term:entertainment">[view:title]</a></h3>'
+          tokenize: false
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Meer weergeven (Entertainment)'
+          plugin_id: text_custom
+          empty: false
+          content: '<h4><a href="term:entertainment">Meer entertainment -> </a></h4>'
+          tokenize: false
+        area_text_custom_1:
+          id: area_text_custom_1
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<hr>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -1895,7 +1889,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2><a href="term:politiek">[view:title]</a></h2>'
+          content: '<h3><a href="term:politiek">[view:title]</a></h3>'
           tokenize: false
       footer:
         area_text_custom_1:
@@ -2225,7 +2219,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2><a href="term:tech">[view:title]</a></h2>'
+          content: '<h3><a href="term:tech">[view:title]</a></h3>'
           tokenize: false
       footer:
         area_text_custom_1:
@@ -2555,7 +2549,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2><a href="term:overig">[view:title]</a></h2>'
+          content: '<h3><a href="term:overig">[view:title]</a></h3>'
           tokenize: false
       footer:
         area_text_custom_1:

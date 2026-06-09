@@ -74,18 +74,13 @@
 }
 
 .grid-full .region--content .views-row {
-  display: inline-block;
-  width: auto;
   margin: 0 auto;
+  position: relative;
+  width: fit-content;
 }
 
 .grid-full .region--content .views-row img {
   display: block;
-}
-
-.grid-full .region--content .views-row {
-  position: relative;
-  width: fit-content;
 }
 
 .grid-full .region--content .view-content .views-row .title-on-image {
@@ -131,5 +126,5 @@
 }
 
 .region--content .view-footer .recente-artikelen-meer-titels .view-content .views-row {
-  margin: 10px;
+  margin: 0 0 10px;
 }

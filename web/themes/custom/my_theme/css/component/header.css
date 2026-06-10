@@ -1,8 +1,8 @@
-.site-header__initial {
+.site-header .site-header__initial {
   display: none;
 }
 
-.site-header__inner__container {
+.site-header .site-header__inner__container {
   display: flex;
   justify-content: center;
   align-items: center;

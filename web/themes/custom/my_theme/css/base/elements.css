@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    color:#0e101c;
+    font-family: "Inter", sans-serif;
+}
+
+.region--sidebar .view-display-id-block_2 .view-content a:visited {
+    color:#6a759f;
+    text-decoration: none;
+}
+.main-content a:hover,
+.main-content a:focus {
+    text-decoration: underline;
+    color:#0e101c;
+}
+
+.region--sidebar .view-display-id-block_2.view-header .h3 a {
+    color: #0e101c;
+    text-decoration: none;
+}

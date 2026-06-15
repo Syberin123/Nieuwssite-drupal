@@ -1,0 +1,20 @@
+uuid: cd122e9f-2395-44f0-a6b2-63dd3a792803
+langcode: en
+status: true
+dependencies: {  }
+name: homepage_image
+label: 'Homepage image (600x350)'
+effects:
+  6791dfbf-c2a1-4cf6-a862-dad3f5614c63:
+    uuid: 6791dfbf-c2a1-4cf6-a862-dad3f5614c63
+    id: image_convert_avif
+    weight: -7
+    data:
+      extension: webp
+  a3767430-7315-4218-8fb4-510a5f5e8704:
+    uuid: a3767430-7315-4218-8fb4-510a5f5e8704
+    id: image_resize
+    weight: 2
+    data:
+      width: 600
+      height: 350

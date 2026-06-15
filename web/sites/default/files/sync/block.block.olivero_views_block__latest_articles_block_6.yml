@@ -1,0 +1,29 @@
+uuid: 757fd51e-33b3-468c-8e89-41032b70f3a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_articles
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__latest_articles_block_6
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:latest_articles-block_6'
+settings:
+  id: 'views_block:latest_articles-block_6'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

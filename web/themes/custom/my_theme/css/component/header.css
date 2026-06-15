@@ -1,0 +1,11 @@
+.site-header .site-header__initial {
+  display: none;
+}
+
+.site-header .site-header__inner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}

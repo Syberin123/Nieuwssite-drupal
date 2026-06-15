@@ -1,0 +1,21 @@
+name: My-theme
+type: theme
+base theme: olivero
+description: default theme slightly twisted
+package: Custom
+core_version_requirement: ^10 || ^11
+libraries:
+  - my_theme/global
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  hero: Hero (full width)
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content_above: Content Above
+  content: Content
+  sidebar: Sidebar
+  content_below: Content Below
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom

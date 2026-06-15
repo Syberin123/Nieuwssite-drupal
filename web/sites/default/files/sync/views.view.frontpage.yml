@@ -304,6 +304,8 @@ display:
       title: Homepagina
       defaults:
         title: false
+        css_class: false
+      css_class: ''
       display_extenders: {  }
       path: home
     cache_metadata:

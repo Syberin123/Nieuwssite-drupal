@@ -1,0 +1,26 @@
+.main-content .main-content__container {
+    max-width: 1500px;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+  background: #ffffff;
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+.site-header__initial {
+  display: none !important;
+}
+
+.social-bar {
+  display: none;
+}
+
+.block-system-branding-block {
+  width: 50px;
+  align-self: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}

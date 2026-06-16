@@ -1,0 +1,20 @@
+uuid: d2634b2a-89d4-461d-926b-1cecdd3cd6eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - my_theme
+id: my_theme_help
+theme: my_theme
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

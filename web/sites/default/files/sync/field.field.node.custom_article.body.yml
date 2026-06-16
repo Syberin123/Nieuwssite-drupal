@@ -1,0 +1,28 @@
+uuid: 9fa3d11c-9965-4073-af39-31515e6ce3b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - node.type.custom_article
+  module:
+    - text
+id: node.custom_article.body
+field_name: body
+entity_type: node
+bundle: custom_article
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - restricted_html
+    - plain_text
+field_type: text_with_summary

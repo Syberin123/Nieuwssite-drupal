@@ -1,0 +1,16 @@
+body {
+    background-image: none;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color:#0e101c;
+    font-family: "Inter", sans-serif;
+}
+
+.main-content a:hover,
+.main-content a:focus {
+    text-decoration: underline;
+    color:#0e101c;
+}
